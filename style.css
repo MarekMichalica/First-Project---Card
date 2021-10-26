@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=family=Roboto+Slab');;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    background-color: #c0cbfc;
+    font-family: 'Roboto Slab', sans-serif;
+}
+#bg {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 50%;
+}
+.card{
+    background-color: white;
+    width: 500px;
+    height: 730px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 18px;
+    box-shadow: 0 3px 100px rgba(0, 0, 0, 0.007), 0 -1px 50px rgba(61, 46, 46, 0.05);
+    
+}
+.banner{
+    width: 100%;
+    
+}
+#illustration{
+    border-radius: 18px 18px 0 0;
+    width: 100%;
+}
+.title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 1em;
+    color: hsl(223, 47%, 23%);
+}
+.text{
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    color: hsl(224, 23%, 55%);
+    line-height: 25px;
+    font-size: 1rem;
+}
+.s_card{
+    display: flex;
+    width: 370px;
+    background-color: rgba(175, 175, 248, 0.185);
+    margin: auto;
+    margin-top: 2em;
+    height: 100px;
+    border-radius: 20px;
+}
+.img1{
+    display:flex;
+    align-items: center;
+    margin-left: 1.4em;
+}
+#music{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.cardText{
+    height: 75px;
+    width: 100px;
+    line-height: 10px; 
+    margin-right: 5.5em; 
+    margin-left: 1em;
+}
+#cardPrice{
+    position: relative;
+    top: 24%;
+    color: rgba(33, 33, 88, 0.548);
+}
+#cardTitle{
+    font-weight: bold;
+    position: relative;
+    top: 25%;
+    color: rgb(29, 29, 138);
+}
+.link{
+    display:flex;
+    align-items: center;
+}
+a{
+    font-weight: bold;
+}
+.buttons{
+    text-align: center;
+}
+button{
+    width: 370px;
+    text-align: center;
+    height: 50px;
+    border: none;
+    background-color: #4227df;
+    margin-top: 3em;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 13px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.301);
+}
+.bottomtext{
+    text-align: center;
+    margin-top: 2em;
+    font-weight: bold;
+    color: #a1a1a1;
+}
+a:hover{
+    color: #6046f1;
+    text-decoration: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #8e7aff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.bottomtext:hover{
+    color:rgba(33, 33, 88, 0.897);
+    cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    .card{
+        background-color: white;
+        width: 500px;
+        height: 720px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 18px;
+        box-shadow: 0 3px 100px rgba(0, 0, 0, 0.007), 0 -1px 50px rgba(61, 46, 46, 0.05);
+        
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .card{
+        background-color: white;
+        width: 400px;
+        height: 700px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 18px;
+        box-shadow: 0 3px 100px rgba(0, 0, 0, 0.007), 0 -1px 50px rgba(61, 46, 46, 0.05);
+        
+    }
+    button, .s_card{
+        width: 300px;
+    }
+    .cardText{
+        height: 75px;
+        width: 100px;
+        line-height: 7px; 
+        margin-right: 1.5em; 
+        margin-left: 1em;
+    }
+    #cardPrice{
+        position: relative;
+        top: 24%;
+    }
+    #cardTitle{
+        font-weight: bold;
+        position: relative;
+        width: 100px;
+        top: 27%;
+    }
+}
